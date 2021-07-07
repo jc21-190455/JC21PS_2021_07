@@ -58,4 +58,9 @@ public class ParticipantListBean implements Serializable {
 	public void addParticipantList(String participant) {
 		this.participantList.add(participant);
 	}
+
+	public void addClubDescriptionList(String participant) {
+		this.participantList.add(participant);
+
+	}
 }
