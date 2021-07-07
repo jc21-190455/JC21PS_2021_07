@@ -27,7 +27,7 @@
 	// メッセージがある場合は表示
 	for(int i = 0; i < messageBean.getMessageList().size(); i++){
 		out.println("<p>" + messageBean.getMessageList().get(i) + "</p>");
-	}
+	 }
   %>
 
 

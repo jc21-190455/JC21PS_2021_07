@@ -26,7 +26,7 @@ public class JoinApprovalControllerServlet extends HttpServlet {
 	 */
 	public JoinApprovalControllerServlet() {
 		super();
-	}
+	 }
 
 	/**
 	 * GETメソッドでリクエストされた場合の処理

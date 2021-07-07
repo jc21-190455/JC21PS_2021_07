@@ -25,7 +25,7 @@ public class JoinApprovalSaveServlet extends HttpServlet {
 	 */
 	public JoinApprovalSaveServlet() {
 		super();
-	}
+	 }
 
 	/**
 	 * POSTでリクエストされた場合
