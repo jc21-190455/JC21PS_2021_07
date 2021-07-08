@@ -27,7 +27,7 @@
 	// メッセージがある場合は表示
 	for(int i = 0; i < messageBean.getMessageList().size(); i++){
 		out.println("<p>" + messageBean.getMessageList().get(i) + "</p>");
-	}
+	 }
   %>
 
 
@@ -47,7 +47,7 @@
   			ヒント
   			Listの中身はget(【番号】)で取得できる。
   			 --%>
-  			<td><%=  %></td>
+  			<td><%=bean.getUserNameList().get(i)  %></td>
 
   			<!-- ヒント
   			下記ボタンではボタンを押された際にuserIdと承認フラグ（承認:true,否認:false）を設定しリクエストをする

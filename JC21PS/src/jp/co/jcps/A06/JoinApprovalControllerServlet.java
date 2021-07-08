@@ -26,7 +26,7 @@ public class JoinApprovalControllerServlet extends HttpServlet {
 	 */
 	public JoinApprovalControllerServlet() {
 		super();
-	}
+	 }
 
 	/**
 	 * GETメソッドでリクエストされた場合の処理
@@ -51,7 +51,7 @@ public class JoinApprovalControllerServlet extends HttpServlet {
 		 * ヒント
 		 * ログインユーザーが部長を務める部活への登録申請を表示する画面。
 		 */
-
+			paramList.add(leaderClubId);
 
 		// DB接続を初期化
 		DBConnection db = new DBConnection();
