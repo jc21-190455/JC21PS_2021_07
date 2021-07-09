@@ -1,4 +1,7 @@
-//190455
+//190455 //先生に聞いた	//できた?
+//A05のJoinRequest.jsp、とこれをCOMMIT&PUSHして、自分のリポジトリに反映させる
+//NewPullRequestをクリックできない
+//左側が「TCC-SystemEngineeringDept」、右側が自分になっていることを確認の画像が出ない
 package jp.co.jcps.A05;
 
 import java.io.IOException;
@@ -61,7 +64,7 @@ public class JoinRequestControllerServlet extends HttpServlet {
 		 *  ログインユーザーの情報を使う。
 		 */
 		//A02の2/52行目
-		//List<String> paramList = new ArrayList<String>();
+		//List<String> paramList = new ArrayList<String>();	//先生に聞いた
 		paramList.add(userId);
 		paramList.add(userId);
 

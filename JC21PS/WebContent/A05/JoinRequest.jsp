@@ -1,3 +1,4 @@
+<%--190455 7/7 聞いた できた?--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="jp.co.jcps.A05.JoinRequestBean"%>
 <jsp:useBean id="messageBean" class="jp.co.jcps.Bean.MessageBean" scope="request" />
@@ -48,12 +49,14 @@
   			Listの中身はget(【番号】)で取得できる。
   			ヒント②
   			<button>タグのvalueオプションはボタンを押した際に登録処理に渡すリクエストパラメータの値を表す。
+  			聞いた!
   			 --%>
-  			<td colspan="1"><%= %></td>
-  			<td colspan="1"><button type='submit' name='registClubId'  value='<%=  %>' onclick="return confirm('申請しますか？')">部員登録申請</button></td>
+  			<td colspan="1"><%= bean.getClubNameList().get(i) %></td>
+  			<td colspan="1"><button type='submit' name='registClubId'  value='<%= bean.getClubNameList().get(i) %>' onclick="return confirm('申請しますか？')">部員登録申請</button></td>
   		</tr>
   		<tr>
-  			<td colspan ="2"><%=  %></td>
+  			<td colspan ="2"><%= bean.getClubDescriptionList().get(i) %></td>
+  			</tr>
   		<%} %>
   		</tbody>
   	</table>
