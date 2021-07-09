@@ -26,7 +26,7 @@ public class JoinApprovalControllerServlet extends HttpServlet {
 	 */
 	public JoinApprovalControllerServlet() {
 		super();
-	}
+	 }
 
 	/**
 	 * GETメソッドでリクエストされた場合の処理
@@ -37,7 +37,7 @@ public class JoinApprovalControllerServlet extends HttpServlet {
 		if (!CommonCheck.existSession(request)) {
 			// セッションが切れてる場合はログイン画面に遷移
 			request.getRequestDispatcher("/Login").forward(request, response);
-		}
+		 }
 
 		// セッションからログイン中のユーザーの部長クラブIDを取得する
 		String leaderClubId = (String) request.getSession().getAttribute("leaderClubId");
@@ -51,7 +51,7 @@ public class JoinApprovalControllerServlet extends HttpServlet {
 		 * ヒント
 		 * ログインユーザーが部長を務める部活への登録申請を表示する画面。
 		 */
-
+			paramList.add(leaderClubId);
 
 		// DB接続を初期化
 		DBConnection db = new DBConnection();
