@@ -100,12 +100,7 @@ public class ParticipantListControllerServlet extends HttpServlet {
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
-
-
-
         }
-
-
 
         // beanをリクエストにセット
         request.setAttribute("bean", bean);
