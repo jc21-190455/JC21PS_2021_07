@@ -59,7 +59,7 @@ public class JoinApprovalSaveServlet extends HttpServlet {
 			 	deleteJoinRequest(registUserId,leaderClubId);
 		}catch(Exception e) {
 			request.getRequestDispatcher("ERROR/Error.jsp").forward(request, response);
-		}
+		 }
 
 		// TOP画面の呼び出し
 		request.getRequestDispatcher("/JoinApprovalController").forward(request, response);

@@ -37,7 +37,7 @@ public class JoinApprovalControllerServlet extends HttpServlet {
 		if (!CommonCheck.existSession(request)) {
 			// セッションが切れてる場合はログイン画面に遷移
 			request.getRequestDispatcher("/Login").forward(request, response);
-		}
+		 }
 
 		// セッションからログイン中のユーザーの部長クラブIDを取得する
 		String leaderClubId = (String) request.getSession().getAttribute("leaderClubId");

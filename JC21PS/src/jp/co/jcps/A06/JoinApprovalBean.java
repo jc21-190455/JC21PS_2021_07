@@ -27,7 +27,7 @@ public class JoinApprovalBean implements Serializable {
 		this.userIdList = new ArrayList<>();
 		this.userNameList = new ArrayList<>();
 
-	 }
+	  }
 
 	/**
 	 * @return clubName
