@@ -1,4 +1,7 @@
-//190455 //先生に聞いた	//できた?	//A05のJoinRequest.jspもコミットすべし
+//190455 //先生に聞いた	//できた?
+//A05のJoinRequest.jsp、とこれをCOMMIT&PUSHして、自分のリポジトリに反映させる
+//NewPullRequestをクリックできない
+//左側が「TCC-SystemEngineeringDept」、右側が自分になっていることを確認の画像が出ない
 package jp.co.jcps.A05;
 
 import java.io.IOException;
