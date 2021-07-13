@@ -2,6 +2,7 @@
 //A05のJoinRequest.jsp、とこれをCOMMIT&PUSHして、自分のリポジトリに反映させる
 //NewPullRequestをクリックできない
 //左側が「TCC-SystemEngineeringDept」、右側が自分になっていることを確認の画像が出ない
+//7/9、こんな画面になったら～画面が出ない?
 package jp.co.jcps.A05;
 
 import java.io.IOException;

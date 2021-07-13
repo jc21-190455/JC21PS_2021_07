@@ -1,3 +1,4 @@
+//190455	//終わっていない
 package jp.co.jcps.A05;
 
 import java.io.IOException;
@@ -50,14 +51,20 @@ public class JoinRequestSaveServlet extends HttpServlet {
 		/* TODO: SQLに埋め込む値をparamListに設定しなさい。
 		 * ヒント①
 		 * user_idはセッション情報から取得する。
-		 * 取得の仕方はJoinRequestControllerServlet.java 43行目を参照
+		 * 取得の仕方はJoinRequestControllerServlet.java 43行目を参照	←A05の2
 		 * ヒント②
 		 * 登録する部活IDはリクエストパラメータとしてHttpServletRequestに格納されている。
 		 * リクエストパラメータの取得のrequest.getParameter(【HTMLのname属性の値】)で取得可能
-		 * A04,ParticipantListControllerServlet.java 43行目を参照
+		 * A04の2,ParticipantListControllerServlet.java 43行目を参照
 		 */
-
-
+		//request.getRequestDispatcher("/Login").forward(request, response);
+		String userId = (String) request.getSession().getAttribute("userId");
+		paramList.add(userId);
+		String activityId =request.getParameter("registClubId");
+		paramList.add(activityId);
+		//String activityId = "";	//A04の2,ParticipantListControllerServlet.java 43行目
+		//String userId = (String) request.getSession().getAttribute("userId");//JoinRequestControllerServlet.java 43行目を参照	←A05の2
+		//request.getRequestDispatcher("/Login").forward(request, response);
 
 		// SQLを実行しデータを登録
 		DBConnection db = new DBConnection();
