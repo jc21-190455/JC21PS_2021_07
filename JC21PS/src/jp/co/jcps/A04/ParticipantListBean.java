@@ -1,5 +1,6 @@
 package jp.co.jcps.A04;
 
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

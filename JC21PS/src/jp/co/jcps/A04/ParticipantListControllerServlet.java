@@ -112,5 +112,4 @@ public class ParticipantListControllerServlet extends HttpServlet {
     }
 
 
-
 }
