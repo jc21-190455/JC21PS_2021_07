@@ -67,10 +67,8 @@ public class ParticipantListControllerServlet extends HttpServlet {
         DBConnection db = new DBConnection();
 
 
-
         // 活動登録画面のBeanを初期化
         ParticipantListBean bean = new ParticipantListBean();
-
 
 
         try {

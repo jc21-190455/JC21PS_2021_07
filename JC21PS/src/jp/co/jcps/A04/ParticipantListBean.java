@@ -1,6 +1,5 @@
 package jp.co.jcps.A04;
 
-
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +7,7 @@ import java.util.List;
 /**
  * 参加者一覧画面のBean
  */
+
 public class ParticipantListBean implements Serializable {
 
 	// 活動名
