@@ -7,6 +7,7 @@ import java.util.List;
 /**
  * 参加者一覧画面のBean
  */
+
 public class ParticipantListBean implements Serializable {
 
 	// 活動名
@@ -58,4 +59,10 @@ public class ParticipantListBean implements Serializable {
 	public void addParticipantList(String participant) {
 		this.participantList.add(participant);
 	}
+
+	public void addClubDescriptionList(String participant) {
+		this.participantList.add(participant);
+
+	}
 }
+
