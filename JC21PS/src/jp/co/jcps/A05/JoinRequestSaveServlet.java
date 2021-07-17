@@ -1,4 +1,4 @@
-//190455	//終わっていない
+//190455	//終わっていない	//7/9聞いたできた?
 package jp.co.jcps.A05;
 
 import java.io.IOException;
@@ -44,7 +44,8 @@ public class JoinRequestSaveServlet extends HttpServlet {
 
 
 		// TODO: データベースにデータを登録する為のSQL文を完成させなさい。
-		String sql = "INSERT INTO";
+		//String sql = "INSERT INTO";
+		String sql ="INSERT INTO trn_join_request VALUES (?,?);";
 
 		// SQLに埋め込むパラメータリストを定義
 		List<String> paramList = new ArrayList<String>();
@@ -71,7 +72,9 @@ public class JoinRequestSaveServlet extends HttpServlet {
 		try {
 			db.executeInsertUpdateQuery(sql, paramList);
 		} catch (Exception e) {
-			request.getRequestDispatcher("ERROR/Error.jsp").forward(request, response);
+			//request.getRequestDispatcher("ERROR/Error.jsp").forward(request, response);
+			//e.printStackTrace(response.getWriter());
+			e.printStackTrace(System.err);
 		}
 
 		// msgに登録完了メッセージをセット
